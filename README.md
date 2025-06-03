@@ -1,3 +1,3 @@
 # 5-versiebeheer
 
-This repository is for the version control assignment using Git and GitHub. 
+Dit is een repository voor de versiebeheer opdracht met Git en GitHub. 
