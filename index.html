@@ -3,60 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Website</title>
+    <title>Demo Website - Versiebeheer</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Welkom op mijn demo website</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Over</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> Over</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Galerij</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h2>Home</h2>
-            <p>Dit is een demo website voor de Git/GitHub opdracht.</p>
-            <div class="image-gallery">
-                <img src="imgs/mule.jpg" alt="Een mooie muildier">
-                <img src="imgs/jellyfish.jpg" alt="Een kleurrijke kwal">
+            <h2><i class="fas fa-home"></i> Home</h2>
+            <p>Welkom op deze demo website voor de Git/GitHub opdracht. Deze site demonstreert het gebruik van versiebeheer en verschillende Git-functionaliteiten.</p>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Clean Code</h3>
+                    <p>Geschreven met moderne HTML5 en CSS3 technieken.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive</h3>
+                    <p>Werkt perfect op alle schermformaten.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Modern Design</h3>
+                    <p>Met aandacht voor gebruiksvriendelijkheid.</p>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>Over</h2>
-            <p>Deze website is gemaakt als onderdeel van de versiebeheer opdracht.</p>
+            <h2><i class="fas fa-info-circle"></i> Over</h2>
+            <p>Deze website is gemaakt als onderdeel van de versiebeheer opdracht. Het demonstreert het gebruik van Git en GitHub voor versiebeheer van webontwikkeling.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Wat leer je hier?</h3>
+                    <ul>
+                        <li>Git repositories beheren</li>
+                        <li>Branches maken en mergen</li>
+                        <li>Samenwerken via GitHub</li>
+                        <li>Conflicten oplossen</li>
+                    </ul>
+                </div>
+                <div class="image-gallery">
+                    <img src="imgs/gator.jpg" alt="Een alligator">
+                    <img src="imgs/clouds.jpg" alt="Prachtige wolken">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2><i class="fas fa-images"></i> Galerij</h2>
+            <p>Een verzameling van prachtige afbeeldingen die we gebruiken in dit project.</p>
             <div class="image-gallery">
-                <img src="imgs/gator.jpg" alt="Een alligator">
-                <img src="imgs/clouds.jpg" alt="Prachtige wolken">
+                <figure>
+                    <img src="imgs/mule.jpg" alt="Een mooie muildier">
+                    <figcaption>Een nieuwsgierige muildier</figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/jellyfish.jpg" alt="Een kleurrijke kwal">
+                    <figcaption>Zwevende kwal in het blauw</figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/gator.jpg" alt="Een alligator">
+                    <figcaption>Alligator in rust</figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/clouds.jpg" alt="Prachtige wolken">
+                    <figcaption>Dramatische wolkenformatie</figcaption>
+                </figure>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Neem contact met ons op via onderstaand formulier.</p>
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>Heb je vragen of opmerkingen? Neem contact met ons op via onderstaand formulier.</p>
             <form>
-                <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" required>
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Naam:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
                 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-at"></i> E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
                 
-                <label for="message">Bericht:</label>
-                <textarea id="message" name="message" required></textarea>
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-heading"></i> Onderwerp:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
                 
-                <button type="submit">Versturen</button>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Bericht:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit"><i class="fas fa-paper-plane"></i> Versturen</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Demo Website</p>
+        <p>&copy; 2024 Demo Website - Gemaakt voor de Versiebeheer Opdracht</p>
     </footer>
 </body>
 </html> 
