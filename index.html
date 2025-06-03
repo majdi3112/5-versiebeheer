@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welkom op mijn demo website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Over</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Dit is een demo website voor de Git/GitHub opdracht.</p>
+            <img src="imgs/demo1.jpg" alt="Demo afbeelding 1">
+        </section>
+
+        <section id="about">
+            <h2>Over</h2>
+            <p>Deze website is gemaakt als onderdeel van de versiebeheer opdracht.</p>
+            <img src="imgs/demo2.jpg" alt="Demo afbeelding 2">
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Neem contact met ons op via onderstaand formulier.</p>
+            <form>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Versturen</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Demo Website</p>
+    </footer>
+</body>
+</html> 
